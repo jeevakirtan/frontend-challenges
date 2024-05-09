@@ -6,7 +6,6 @@ const Div = styled.div`
   height: 49.7rem;
   border-radius: 1rem;
   background-color: #ffffff;
-  padding: 1rem;
   text-align: center;
 `;
 const Img = styled.img`

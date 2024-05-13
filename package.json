@@ -7,8 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run build && node server.js",
     "build": "npm run build:qrcode && npm run build:recipePage",
-    "build:qrcode": "cd qr-code-component && npm run build",
-    "build:recipePage": "cd recipe-page && npm run build"
+    "build:qrcode": "cd qr-code-component && npm i && npm run build",
+    "build:recipePage": "cd recipe-page && npm i && npm run build"
   },
   "keywords": [],
   "author": "",

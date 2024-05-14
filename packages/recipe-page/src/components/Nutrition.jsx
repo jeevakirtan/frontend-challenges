@@ -24,6 +24,7 @@ export const Nutrition = () => (
         <SectionTitle>Nutrition</SectionTitle>
         <p>The table below shows nutritional values per serving without additional fillings.</p>
         <table>
+            <tbody>
             <tr>
                 <td>Calories</td>
                 <td>277kcal</td>
@@ -40,6 +41,7 @@ export const Nutrition = () => (
                 <td>Fat</td>
                 <td>22g</td>
             </tr>
+            </tbody>
         </table>
     </Section>
 )

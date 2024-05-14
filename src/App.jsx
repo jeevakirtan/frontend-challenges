@@ -1,17 +1,18 @@
 
 import QrCodeComp from "@qrCode/App"
 import RecipePage from "@recipePage/App"
-import { BrowserRouter, Route, Routes } from "react-router-dom"
+import {  Route, Routes } from "react-router-dom"
+import TestComponent from "./TestComponent"
 
 function App() {
 
-  return <BrowserRouter>
-    <Routes>
-      <Route path="/qrcode-component" element={<QrCodeComp />} />
-      <Route path="/recipe-page" element={<RecipePage />} />
-      <Route path="/" element={<h2>Welcome</h2>} />
-    </Routes>
-  </BrowserRouter>
+  return (<Routes>
+    <Route path="/qrcode-component" element={<QrCodeComp />} />
+    <Route path="/recipe-page" element={<RecipePage />} />
+    <Route path="/test" element={<TestComponent />} />
+    <Route path="/" element={<h2>Welcome</h2>} />
+  </Routes>);
+    
 }
 
 export default App

@@ -18,6 +18,7 @@ const Main = styled.main`
         margin: 1rem auto;
         padding: 1rem 3rem;
         width: 80%;
+        border-radius: 0;
     }
 
     @media screen and (max-width: 480px){
@@ -25,6 +26,7 @@ const Main = styled.main`
         margin: 0;
         padding: 1rem 2rem;
         width: 100%;
+        border-radius: 0;
     }
 
 `;

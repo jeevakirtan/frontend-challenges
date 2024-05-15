@@ -1,5 +1,4 @@
 import { styled } from "styled-components";
-import starIcon from "../assets/images/icon-star.svg"
 import Accordion from "./Accordion";
 import { useState } from "react";
 
@@ -29,7 +28,7 @@ const CardTitle = styled.h1`
     font-size: 46px;
 `
 const StarIcon = styled.div`
-    background-image: url(${starIcon});
+    background-image: url("/faq/images/icon-star.svg");
     width: 40px;
     height: 40px;
     display: inline-block;

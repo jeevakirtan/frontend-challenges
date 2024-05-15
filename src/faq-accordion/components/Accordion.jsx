@@ -1,6 +1,7 @@
 import { styled } from "styled-components"
-import plusSign from "../assets/images/icon-plus.svg"
-import minusSign from "../assets/images/icon-minus.svg"
+
+const plusSign = "/faq/images/icon-plus.svg"
+const minusSign = "/faq/images/icon-minus.svg"
 
 const AccordionContainer = styled.div`
     padding: 20px 0;
@@ -22,7 +23,7 @@ const Question = styled.h2`
     color: hsl(292, 42%, 14%);
     margin: 0;
     flex-grow: 1;
-    
+
     @media screen and (max-width: 768px){
         font-size: 16px;
     }

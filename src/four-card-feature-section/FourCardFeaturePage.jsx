@@ -1,10 +1,15 @@
-import { styled } from "styled-components";
+import { styled, createGlobalStyle } from "styled-components";
 import calculatorIcon from "./images/icon-calculator.svg"
 import karmaIcon from "./images/icon-karma.svg"
 import supervisorIcon from "./images/icon-supervisor.svg"
 import teamBuilderIcon from "./images/icon-team-builder.svg"
-import "./style.css"
 import GridCard from "./components/GridCard";
+
+const GlobalStyles = createGlobalStyle`
+    * {
+        box-sizing: border-box;
+    }
+`
 
 const Container = styled.main`
     margin-top: 50px;
@@ -16,7 +21,7 @@ const Container = styled.main`
     @media screen and (max-width: 480px) {
         padding: 10px 15px;
         margin-top: 0;
-        
+
         h1 {
             font-size: 30px;
         }
@@ -96,6 +101,8 @@ function FourCardFeaturePage() {
         }
     ]
     return (
+        <>
+        <GlobalStyles />
         <Container>
             <Title $color={"hsl(229, 6%, 66%)"}>
                 Reliable, efficient delivery
@@ -120,6 +127,7 @@ function FourCardFeaturePage() {
                 }
             </GridContainer>
         </Container>
+        </>
     );
 }
 
